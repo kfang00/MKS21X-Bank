@@ -3,8 +3,8 @@ public class BankAccount {
 	private int accountID;
 	private String password;
 
-	public BankAccount(int StartAccountID, double startBalance, String startPassword) {
-		accountID = StartAccountID;
+	public BankAccount(int startAccountID, double startBalance, String startPassword) {
+		accountID = startAccountID;
 		balance = startBalance;
 		password = startPassword;
 	} 
