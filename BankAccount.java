@@ -3,10 +3,10 @@ public class BankAccount {
 	private int accountID;
 	private String password;
 
-	public BankAccount(int accountID, double balance, String password) {
-		accountID = accountID;
-		balance = balance;
-		password = password;
+	public BankAccount(int StartAccountID, double startBalance, String startPassword) {
+		accountID = StartAccountID;
+		balance = startBalance;
+		password = startPassword;
 	} 
 
 	public double getBalance(){
@@ -21,7 +21,7 @@ public class BankAccount {
 	} 
 
 	public String toString(){
-		return accountID + "\t" + balance;
+		return getAccountID() + "\t" + getBalance();
 	} 
 
 	public boolean deposit(double amount){
