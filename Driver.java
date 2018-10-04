@@ -7,11 +7,12 @@ public class Driver {
 		else{
             		System.out.println("Withdrawal failure");
 		}
-		if(a.deposit(10000000) ){
+		if(a.deposit(100) ){
              		System.out.println("Deposit success!");
        		}
 		else{
             		System.out.println("Deposit failure");
 		}
+		System.out.println(a.toString());
 	}
 }
