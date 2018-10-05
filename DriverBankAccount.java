@@ -2,6 +2,8 @@ public class DriverBankAccount{
   public static void main(String[]args){
     BankAccount b1 = new BankAccount(1000.0, 1000001, "abc123");
     BankAccount b2 = new BankAccount(1234.0, 1000231, "abcasdg23");
+    BankAccount b3 = new BankAccount(1000.0, 1000001, "fish");
+    BankAccount b4 = new BankAccount(1234.0, 1000231, "dog");
 
     System.out.println("Account b1:");
     System.out.println(b1);
@@ -33,5 +35,8 @@ public class DriverBankAccount{
       System.out.println();
       cashAmount *= 2;
     }
+    System.out.println(b3.transferTo(b4, 200, "zip"));
+    System.out.println(b3.transferTo(b4, 200, "fish"));
+    System.out.println(b2.transferTo(b4, 22200, "abcasdg23"));
   }
 }
